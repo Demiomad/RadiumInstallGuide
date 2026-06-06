@@ -1,118 +1,210 @@
-# HOW TO INSTALL AND PLAY RADIUM PROPERLY
+# Installing and Playing Radium
 
-## Section 1: Actually Downloading the Game
-In order to download Radium, join the [Radium](https://discord.gg/radium-rr) Discord server.
-After you've done that, go to the `#💾｜download` channel and download Radium:
-- .ipa files are for iOS
-- .zip/.dll files are for Windows
+This guide will walk you through downloading Radium, creating an account, linking Discord, configuring Windows Defender, and launching the game.
 
-### If you'd like to get Radium for Oculus/Quest
+---
 
-### Verify your Meta account
-Run `/verify-oculus` in the `⁠#🤖｜bot-commands` channel using the username or email associated with your Meta account. (Don't just say `/verify-oculus`)
+# Section 1: Downloading Radium
 
-**Note:** Meta usernames are case-sensitive. Make sure you enter your username **exactly** as it appears on your Meta account.
+To download Radium, first join the Radium Discord server.
 
-#### Example:
-If your username is `CoolBoy2011`, enter `CoolBoy2011` and **NOT** `COOLBoy2011`, `CoolBOY2011` or anything else.
+Once you've joined, navigate to the `#💾｜download` channel and download the appropriate version:
 
-### Accept the invite
-Check your email for an invitation from *RecRoomArchive* and accept it.
+* `.ipa` files are for iOS devices.
+* `.zip` and `.dll` files are for Windows.
 
-### Install and play
-Put on your headset and look for **Radium** in your Quest app library.
-If it doesn't appear right away, try restarting your headset.
+## Oculus / Quest Installation
 
-This is a temporary solution while the Radium team waits for **App Lab** approval, which will make installation easier in the future.
+### Verify Your Meta Account
 
-## Section 2: Creating an Account
-Go to [Radium's Website](https://radie.app) and click *Sign Up*<br>
-**Enter your username, password, and date of birth.**
-
-### It should look something like this:
-![How it should look like](image.png)
-
-Once you're done, click **Create Account!**
-### Congratulations, you've just made a Radium account!
-
-## Section 3: Linking Your Discord Account
-You're not ready to play Radium yet! You still have to link your Discord account.
-
-### Getting a verification code 
-Go to #🤖｜bot-commands and run `/link` (Don't just say `/link`, also the command should have the Radium icon next to it), the bot should give you an verification code. **DO NOT SHARE IT ANYWHERE!**
+In `#🤖｜bot-commands`, run the `/verify-oculus` command using the username or email address associated with your Meta account.
 
 > [!note]
-> If the Radium bot doesn't respond, then it's most likely offline.
-> Please be patient while the Radium team tries to fix this issue.
+> Meta usernames are case-sensitive. Enter your username exactly as it appears on your account.
 
-### Using the verification code
-Go to [the settings page](https://www.radie.app/my/settings) and enter your verification code under *Link Discord*
+#### Example
+
+If your username is `CoolBoy2011`, enter:
+
+`CoolBoy2011`
+
+Do not enter:
+
+* `COOLBoy2011`
+* `CoolBOY2011`
+* Any other variation
+
+### Accept the Invitation
+
+Check your email for an invitation from *RecRoomArchive* and accept it.
+
+### Install and Play
+
+Put on your headset and open your Quest app library.
+
+You should see **Radium** listed among your applications. If it does not appear immediately, restart your headset and check again.
+
+> [!note]
+> This is a temporary installation method while the Radium team awaits App Lab approval, which will simplify installation in the future.
+
+---
+
+# Section 2: Creating a Radium Account
+
+Visit the Radium website and click **Sign Up**.
+
+Enter the following information:
+
+* Username
+* Password
+* Date of birth
+
+### Example
+
+![How it should look](image.png)
+
+Once you've filled out the form, click **Create Account**.
+
+### Account Created
+
+Your Radium account is now ready to use.
+
+---
+
+# Section 3: Linking Your Discord Account
+
+Before you can play, you must link your Discord account to your Radium account.
+
+## Getting a Verification Code
+
+Navigate to `#🤖｜bot-commands` and run the `/link` command.
+
+Make sure you're using the Radium bot's slash command rather than simply typing `/link` as a message.
+
+The bot will provide a verification code.
+
+> [!warning]
+> Never share your verification code with anyone.
+
+> [!note]
+> If the Radium bot does not respond, it may be temporarily offline. Please wait and try again later.
+
+## Using the Verification Code
+
+Open the Radium Settings page and locate the **Link Discord** section.
+
+Enter your verification code.
 
 ![Example](image-1.png)
 
-Once you're done, press **Verify and Link**, to verify that your account has been linked, look for something like this:
+Click **Verify and Link**.
+
+If the link was successful, you should see your Discord account information displayed.
 
 ![Verified Discord User Info](image-2.png)
 
-If it doesn't seem to show a user ID, try again or contact Radium support.
+If no Discord user information appears, try linking again or contact Radium support.
 
-## Section 4: Adding Exclusions to Windows Defender
-### This was added because some people don't understand that not every detection is malware.<br>
-**If you aren't on Windows, you can skip this section.**<br>
-### MAKE SURE TO EXTRACT THE ZIP FILE AFTER YOU'VE DISABLED WINDOWS DEFENDER!!
+---
 
-### Disabling real-time protection and tamper protection
-First, temporarily disable Windows Defender by opening *Windows Security*, then navigate to **Virus & threat protection**, and under **Virus & threat protection settings** click **Manage setttings**. then turn off both **Real-time protection** and **Tamper protection**, accept any UAC prompts.
+# Section 4: Adding Windows Defender Exclusions
 
-### If you'd like to use PowerShell
-First, check the current state:
+> [!note]
+> If you are not using Windows, you can skip this section.
+
+## Before You Begin
+
+Extract the Radium ZIP file before continuing.
+
+### Disable Real-Time Protection and Tamper Protection
+
+1. Open **Windows Security**.
+2. Navigate to **Virus & threat protection**.
+3. Under **Virus & threat protection settings**, click **Manage settings**.
+4. Temporarily disable:
+
+   * Real-time protection
+   * Tamper Protection
+5. Accept any User Account Control (UAC) prompts.
+
+### Using PowerShell
+
+Check the current Defender status:
+
 ```pwsh
 Get-MpComputerStatus
 ```
-Look at the `IsTamperProtected` line.<br>
-**If IsTamperProtected is True, disable it using Windows Security (PowerShell doesn't let you disable Tamper Protection)**
 
-After that, disable real-time monitoring:
+Review the `IsTamperProtected` field.
+
+If it is set to `True`, disable Tamper Protection through Windows Security, as PowerShell cannot disable it.
+
+Disable real-time monitoring:
+
 ```pwsh
 Set-MpPreference -DisableRealtimeMonitoring $true
 ```
 
-To re-enable (run this after you're done):
+Re-enable it afterward:
+
 ```pwsh
 Set-MpPreference -DisableRealtimeMonitoring $false
 ```
 
-**Don't worry, Radium is safe. Any detections from antiviruses are false positives!**
+## Adding an Exclusion
 
-### Adding exclusions
-First, open *Windows Security*, navigate to **Virus & threat protection**, and under **Virus & threat protection settings** click **Manage setttings**, however this time, scroll down until you find **Exclusions**.
+1. Open **Windows Security**.
+2. Navigate to **Virus & threat protection**.
+3. Under **Virus & threat protection settings**, select **Manage settings**.
+4. Scroll to **Exclusions**.
+5. Click **Add or remove exclusions**.
+6. Select **Add an exclusion** → **Folder**.
+7. Choose your Radium installation folder.
 
-Once you've found that, click **Add or remove exclusions**.
+### Using PowerShell
 
-On the Exclusions page, click **Add exclusion**, select **Folder**, browse to your Radium folder, then click **Open**.
-
-### If you'd like to use PowerShell
 ```pwsh
 Add-MpPreference -ExclusionPath "C:\path\to\your\radium\folder"
 ```
-(Replace `C:\path\to\your\radium\folder` with your Radium folder's path, obviously)
 
-**MAKE SURE TO ENABLE REAL-TIME PROTECTION AND TAMPER PROTECTION ONCE YOU'VE ADDED THE EXCLUSIONS!!**
+Replace the example path with the location of your Radium installation.
 
-## Section 5: The Last One
-We've finally gone through the boring steps, now it's time to play Radium!
+> [!important]
+> Re-enable Real-time Protection and Tamper Protection after adding the exclusion.
 
-First, find your Radium folder, you should see three `.bat` files:
-- `RecRoom_ScreenMode.bat` - Run this if you're playing on PC without a VR.
-- `RecRoom_VR.bat` - Run this if you're playing on PCVR.
-- `RecRoomLog.bat` - Opens `%APPDATA%\..\LocalLow\Against Gravity\Rec Room`, most likely to view the game's logs. This doesn't launch Rec Room.
+---
 
-Once you're in Rec Room, click **Sign in to an existing Rec Room account**, you **MUST** use this button as the **Create Account** button doesn't work properly (from what I've heard), besides, you've already made a Radium account! Why make another one?
+# Section 5: Launching Radium
 
-Enter your username and password, check **Remember Password** (recommended) and click **Sign In**.
+You are now ready to launch the game.
 
-# Congratulations! You've successfully joined Radium!
-You should be proud of yourself! Most people just don't read, so the fact that you got **THIS** far is very surprising!
-If you have any issues, you can go to the `#❓｜help` channel and explain your issue.
+Open your Radium installation folder. You should see the following batch files:
 
-Also read the [Common Errors](COMMON_ERRORS.md).
+* `RecRoom_ScreenMode.bat` — Launches the game in desktop mode.
+* `RecRoom_VR.bat` — Launches the game in VR mode.
+* `RecRoomLog.bat` — Opens the game's log directory and does not launch the game.
+
+## Signing In
+
+Once Rec Room starts, select:
+
+**Sign in to an existing Rec Room account**
+
+Use the Radium account you created earlier.
+
+Enter your:
+
+* Username
+* Password
+
+Optionally enable **Remember Password**, then click **Sign In**.
+
+---
+
+# Congratulations
+
+You have successfully installed and configured Radium.
+
+If you encounter any issues, visit the `#❓｜help` channel and describe the problem you're experiencing.
+
+You can also review the [**Common Errors**](COMMON_ERRORS.md) guide for solutions to frequently reported issues.
