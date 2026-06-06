@@ -39,7 +39,11 @@ Once you're done, click **Create Account!**
 You're not ready to play Radium yet! You still have to link your Discord account.
 
 ### Getting a verification code 
-Go to #🤖｜bot-commands and run `/link` (Don't just say `/link`), the bot should give you an verification code. **DO NOT SHARE IT ANYWHERE!**
+Go to #🤖｜bot-commands and run `/link` (Don't just say `/link`, also the command should have the Radium icon next to it), the bot should give you an verification code. **DO NOT SHARE IT ANYWHERE!**
+
+> [!note]
+> If the Radium bot doesn't respond, then it's most likely offline.
+> Please be patient while the Radium team tries to fix this issue.
 
 ### Using the verification code
 Go to [the settings page](https://www.radie.app/my/settings) and enter your verification code under *Link Discord*
