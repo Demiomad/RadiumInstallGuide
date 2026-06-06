@@ -2,14 +2,14 @@
 
 ## Section 1: Actually Downloading the Game
 In order to download Radium, join the [Radium](https://discord.gg/radium-rr) Discord server.
-After you've done that, go to the #💾｜download channel and download Radium:
+After you've done that, go to the `#💾｜download` channel and download Radium:
 - .ipa files are for iOS
 - .zip/.dll files are for Windows
 
 ### If you'd like to get Radium for Oculus/Quest
 
 ### Verify your Meta account
-Run `/verify-oculus` in ⁠#🤖｜bot-commands using the username or email associated with your Meta account. (Don't just say `/verify-oculus`)
+Run `/verify-oculus` in the `⁠#🤖｜bot-commands` channel using the username or email associated with your Meta account. (Don't just say `/verify-oculus`)
 
 **Note:** Meta usernames are case-sensitive. Make sure you enter your username **exactly** as it appears on your Meta account.
 
@@ -109,4 +109,4 @@ Enter your username and password, check **Remember Password** (recommended) and 
 
 # Congratulations! You've successfully joined Radium!
 You should be proud of yourself! Most people just don't read, so the fact that you got **THIS** far is very surprising!
-If you have any issues, you can go to the #❓｜help channel and explain your issue.
+If you have any issues, you can go to the `#❓｜help` channel and explain your issue.
