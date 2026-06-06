@@ -93,7 +93,7 @@ Add-MpPreference -ExclusionPath "C:\path\to\your\radium\folder"
 ```
 (Replace `C:\path\to\your\radium\folder` with your Radium folder's path, obviously)
 
-**MAKE SURE TO ENABLE REAL-TIME PROTECTION AND TAMPER PROTECTION!!**
+**MAKE SURE TO ENABLE REAL-TIME PROTECTION AND TAMPER PROTECTION ONCE YOU'VE ADDED THE EXCLUSIONS!!**
 
 ## Section 5: The Last One
 We've finally gone through the boring steps, now it's time to play Radium!
@@ -109,3 +109,4 @@ Enter your username and password, check **Remember Password** (recommended) and 
 
 # Congratulations! You've successfully joined Radium!
 You should be proud of yourself! Most people just don't read, so the fact that you got **THIS** far is very surprising!
+If you have any issues, you can go to the #❓｜help channel and explain your issue.
