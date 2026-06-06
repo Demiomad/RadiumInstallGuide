@@ -114,3 +114,5 @@ Enter your username and password, check **Remember Password** (recommended) and 
 # Congratulations! You've successfully joined Radium!
 You should be proud of yourself! Most people just don't read, so the fact that you got **THIS** far is very surprising!
 If you have any issues, you can go to the `#❓｜help` channel and explain your issue.
+
+Also read the [Common Errors](COMMON_ERRORS.md).
