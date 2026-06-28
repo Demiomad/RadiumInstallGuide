@@ -13,7 +13,7 @@ This error usually occurs when `BepInEx\plugins\Radeon.Core.BasePatch.dll` has b
 
 To fix this:
 
-1. Read the [README](README.md#section-4-adding-exclusions-to-windows-defender) in order to disable Windows Defender (and add an exclusion)
+1. Read the [README](README.md#section-4-adding-windows-defender-exclusions) in order to disable Windows Defender (and add an exclusion)
 2. Open the original Radium `.zip` file.
 3. Navigate to `BepInEx\plugins`.
 4. Copy `Radeon.Core.BasePatch.dll`.
